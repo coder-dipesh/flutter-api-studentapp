@@ -1,0 +1,69 @@
+[
+    {
+        "stdId" : 1,
+        "fname":"Kiran",
+        "lname":"Rana",
+        "username":"kiran",
+        "password":"kiran123",
+        "batch":{    
+            "batchId" : 1,  
+            "batchName":"29-A"          
+        },
+        "course":[
+            {
+                "courseId":1,
+                "courseName":"Flutter"
+            },
+            {
+                "courseId":2,
+                "courseName":"Web Api"
+            },
+            {
+                "courseId":3,
+                "courseName":"Python"
+            }           
+        ]
+    },
+    {
+        "stdId" : 2,
+        "fname":"Achyut",
+        "lname":"Timsina",
+        "username":"achyut",
+        "password":"achyut",
+        "batch":{   
+            "batchId" : 1, 
+            "batchName":"29-A"          
+        },
+        "course":[
+            {
+                "courseId":1,
+                "courseName":"Flutter"
+            },
+            {
+                "courseId":2,
+                "courseName":"Web Api"
+            }   
+        ]
+    },
+    {
+        "stdId" : 3,
+        "fname":"Rajkumar",
+        "lname":"Humagain",
+        "username":"rajkumar",
+        "password":"humagain",
+        "batch":{
+            "batchId" : 2, 
+            "batchName":"29-B"          
+        },
+        "course":[
+            {
+                "courseId":3,
+                "courseName":"Python"
+            },
+            {
+                "courseId":4,
+                "courseName":"Dart"
+            }   
+        ]
+    }
+]

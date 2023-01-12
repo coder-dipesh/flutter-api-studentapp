@@ -1,0 +1,19 @@
+{
+    "success": true,
+    "data": [
+        {
+            "_id": "62d7eb8385582638f330fbf7",
+            "name": "Vegetables",
+            "color": "Red",
+            "image": "/public/category/IMG-1658317699165.jpeg",
+            "__v": 0
+        },
+        {
+            "_id": "62d7ecdefe6ab539e994ed8f",
+            "name": "Bakery",
+            "color": "Red",
+            "image": "/public/category/IMG-1658318046702.png",
+            "__v": 0
+        }
+    ]
+}

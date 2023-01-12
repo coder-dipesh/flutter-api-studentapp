@@ -1,0 +1,166 @@
+{
+    "success": true,
+    "data": [
+        {
+            "richDescription": "",
+            "image": "/public/products/IMG-1658318498283.jpeg",
+            "images": [],
+            "price": 60,
+            "rating": 5,
+            "numReviews": 12,
+            "isFeatured": false,
+            "_id": "62d7eea24c8c923fb36d450a",
+            "name": "Muffin",
+            "description": "Muffin",
+            "category": {
+                "_id": "62d7ecdefe6ab539e994ed8f",
+                "name": "Bakery",
+                "color": "Red",
+                "image": "/public/category/IMG-1658318046702.png",
+                "__v": 0
+            },
+            "countInStock": 200,
+            "dateCreated": "2022-07-20T12:01:38.290Z",
+            "__v": 0,
+            "id": "62d7eea24c8c923fb36d450a"
+        },
+        {
+            "richDescription": "",
+            "image": "/public/products/IMG-1658318533237.jpeg",
+            "images": [],
+            "price": 100,
+            "rating": 5,
+            "numReviews": 12,
+            "isFeatured": false,
+            "_id": "62d7eec54c8c923fb36d4510",
+            "name": "Black Forest",
+            "description": "Black Forest",
+            "category": {
+                "_id": "62d7ecdefe6ab539e994ed8f",
+                "name": "Bakery",
+                "color": "Red",
+                "image": "/public/category/IMG-1658318046702.png",
+                "__v": 0
+            },
+            "countInStock": 200,
+            "dateCreated": "2022-07-20T12:02:13.245Z",
+            "__v": 0,
+            "id": "62d7eec54c8c923fb36d4510"
+        },
+        {
+            "richDescription": "",
+            "image": "/public/products/IMG-1658318550668.png",
+            "images": [],
+            "price": 65,
+            "rating": 5,
+            "numReviews": 12,
+            "isFeatured": false,
+            "_id": "62d7eed64c8c923fb36d4513",
+            "name": "Bread",
+            "description": "Bread",
+            "category": {
+                "_id": "62d7ecdefe6ab539e994ed8f",
+                "name": "Bakery",
+                "color": "Red",
+                "image": "/public/category/IMG-1658318046702.png",
+                "__v": 0
+            },
+            "countInStock": 200,
+            "dateCreated": "2022-07-20T12:02:30.675Z",
+            "__v": 0,
+            "id": "62d7eed64c8c923fb36d4513"
+        },
+        {
+            "richDescription": "",
+            "image": "/public/products/IMG-1658318575340.jpeg",
+            "images": [],
+            "price": 90,
+            "rating": 5,
+            "numReviews": 12,
+            "isFeatured": false,
+            "_id": "62d7eeef4c8c923fb36d4516",
+            "name": "Cream doughnut",
+            "description": "Cream doughnut",
+            "category": {
+                "_id": "62d7ecdefe6ab539e994ed8f",
+                "name": "Bakery",
+                "color": "Red",
+                "image": "/public/category/IMG-1658318046702.png",
+                "__v": 0
+            },
+            "countInStock": 200,
+            "dateCreated": "2022-07-20T12:02:55.342Z",
+            "__v": 0,
+            "id": "62d7eeef4c8c923fb36d4516"
+        },
+        {
+            "richDescription": "",
+            "image": "/public/products/IMG-1658318588696.jpeg",
+            "images": [],
+            "price": 70,
+            "rating": 5,
+            "numReviews": 12,
+            "isFeatured": false,
+            "_id": "62d7eefc4c8c923fb36d4519",
+            "name": "Crossaint",
+            "description": "Crossaint",
+            "category": {
+                "_id": "62d7ecdefe6ab539e994ed8f",
+                "name": "Bakery",
+                "color": "Red",
+                "image": "/public/category/IMG-1658318046702.png",
+                "__v": 0
+            },
+            "countInStock": 200,
+            "dateCreated": "2022-07-20T12:03:08.703Z",
+            "__v": 0,
+            "id": "62d7eefc4c8c923fb36d4519"
+        },
+        {
+            "richDescription": "",
+            "image": "/public/products/IMG-1658318607088.jpeg",
+            "images": [],
+            "price": 70,
+            "rating": 5,
+            "numReviews": 12,
+            "isFeatured": false,
+            "_id": "62d7ef0f4c8c923fb36d451c",
+            "name": "Special crossaint",
+            "description": "Special Crossaint",
+            "category": {
+                "_id": "62d7ecdefe6ab539e994ed8f",
+                "name": "Bakery",
+                "color": "Red",
+                "image": "/public/category/IMG-1658318046702.png",
+                "__v": 0
+            },
+            "countInStock": 200,
+            "dateCreated": "2022-07-20T12:03:27.090Z",
+            "__v": 0,
+            "id": "62d7ef0f4c8c923fb36d451c"
+        },
+        {
+            "richDescription": "",
+            "image": "/public/products/IMG-1658376938822.jpeg",
+            "images": [],
+            "price": 65,
+            "rating": 5,
+            "numReviews": 12,
+            "isFeatured": false,
+            "_id": "62d8d2ea29f7ed0cc31e5a8b",
+            "name": "Doughnut",
+            "description": "Doughnut",
+            "category": {
+                "_id": "62d7ecdefe6ab539e994ed8f",
+                "name": "Bakery",
+                "color": "Red",
+                "image": "/public/category/IMG-1658318046702.png",
+                "__v": 0
+            },
+            "countInStock": 200,
+            "dateCreated": "2022-07-21T04:15:38.831Z",
+            "__v": 0,
+            "id": "62d8d2ea29f7ed0cc31e5a8b"
+        }
+    ]
+}

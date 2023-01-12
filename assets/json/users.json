@@ -1,0 +1,23 @@
+[
+    {
+        "isAdmin": true,
+        "address": "Talchhikhel",
+        "country": "Nepal",
+        "_id": "62d537284b6bc93c701a4588",
+        "email": "kiranrana8973@gmail.com",
+        "username": "admin",
+        "phone": "9812323232",
+        "__v": 0
+    },
+    {
+        "isAdmin": true,
+        "address": "Talchhikhel",
+        "country": "Nepal",
+        "_id": "63370b0067cd05093dc9a6e7",
+        "email": "anita@gmail.com",
+        "username": "anita",
+        "phone": "9800076468",
+        "__v": 0
+    }
+    
+]
