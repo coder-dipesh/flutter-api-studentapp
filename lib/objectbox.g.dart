@@ -78,7 +78,7 @@ final _entities = <ModelEntity>[
   ModelEntity(
       id: const IdUid(3, 1133708803724402385),
       name: 'Student',
-      lastPropertyId: const IdUid(6, 3403387864010101592),
+      lastPropertyId: const IdUid(8, 2629466695231880814),
       flags: 0,
       properties: <ModelProperty>[
         ModelProperty(
@@ -112,7 +112,18 @@ final _entities = <ModelEntity>[
             type: 11,
             flags: 520,
             indexId: const IdUid(1, 793920947651506709),
-            relationTarget: 'Batch')
+            relationTarget: 'Batch'),
+        ModelProperty(
+            id: const IdUid(7, 7967696221916700943),
+            name: 'studentId',
+            type: 9,
+            flags: 2080,
+            indexId: const IdUid(4, 6667056811140623708)),
+        ModelProperty(
+            id: const IdUid(8, 2629466695231880814),
+            name: 'image',
+            type: 9,
+            flags: 0)
       ],
       relations: <ModelRelation>[
         ModelRelation(
@@ -144,7 +155,7 @@ ModelDefinition getObjectBoxModel() {
   final model = ModelInfo(
       entities: _entities,
       lastEntityId: const IdUid(3, 1133708803724402385),
-      lastIndexId: const IdUid(3, 8317673290216499866),
+      lastIndexId: const IdUid(4, 6667056811140623708),
       lastRelationId: const IdUid(1, 3909601909676186380),
       lastSequenceId: const IdUid(0, 0),
       retiredEntityUids: const [],
@@ -259,13 +270,20 @@ ModelDefinition getObjectBoxModel() {
           final passwordOffset = object.password == null
               ? null
               : fbb.writeString(object.password!);
-          fbb.startTable(7);
+          final studentIdOffset = object.studentId == null
+              ? null
+              : fbb.writeString(object.studentId!);
+          final imageOffset =
+              object.image == null ? null : fbb.writeString(object.image!);
+          fbb.startTable(9);
           fbb.addInt64(0, object.stdId);
           fbb.addOffset(1, fnameOffset);
           fbb.addOffset(2, lnameOffset);
           fbb.addOffset(3, usernameOffset);
           fbb.addOffset(4, passwordOffset);
           fbb.addInt64(5, object.batch.targetId);
+          fbb.addOffset(6, studentIdOffset);
+          fbb.addOffset(7, imageOffset);
           fbb.finish(fbb.endTable());
           return object.stdId;
         },
@@ -274,16 +292,19 @@ ModelDefinition getObjectBoxModel() {
           final rootOffset = buffer.derefObject(0);
 
           final object = Student(
+              stdId: const fb.Int64Reader().vTableGet(buffer, rootOffset, 4, 0),
+              studentId: const fb.StringReader(asciiOptimization: true)
+                  .vTableGetNullable(buffer, rootOffset, 16),
               fname: const fb.StringReader(asciiOptimization: true)
                   .vTableGetNullable(buffer, rootOffset, 6),
               lname: const fb.StringReader(asciiOptimization: true)
                   .vTableGetNullable(buffer, rootOffset, 8),
+              image: const fb.StringReader(asciiOptimization: true)
+                  .vTableGetNullable(buffer, rootOffset, 18),
               username: const fb.StringReader(asciiOptimization: true)
                   .vTableGetNullable(buffer, rootOffset, 10),
               password: const fb.StringReader(asciiOptimization: true)
-                  .vTableGetNullable(buffer, rootOffset, 12),
-              stdId:
-                  const fb.Int64Reader().vTableGet(buffer, rootOffset, 4, 0));
+                  .vTableGetNullable(buffer, rootOffset, 12));
           object.batch.targetId =
               const fb.Int64Reader().vTableGet(buffer, rootOffset, 14, 0);
           object.batch.attach(store);
@@ -346,6 +367,13 @@ class Student_ {
   /// see [Student.batch]
   static final batch =
       QueryRelationToOne<Student, Batch>(_entities[2].properties[5]);
+
+  /// see [Student.studentId]
+  static final studentId =
+      QueryStringProperty<Student>(_entities[2].properties[6]);
+
+  /// see [Student.image]
+  static final image = QueryStringProperty<Student>(_entities[2].properties[7]);
 
   /// see [Student.course]
   static final course =

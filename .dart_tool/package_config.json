@@ -339,9 +339,9 @@
     },
     {
       "name": "mime",
-      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/mime-1.0.3",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/mime-1.0.4",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.18"
     },
     {
       "name": "multi_select_flutter",
@@ -668,7 +668,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2023-01-12T05:09:34.891250Z",
+  "generated": "2023-01-24T06:18:12.378423Z",
   "generator": "pub",
   "generatorVersion": "2.18.6"
 }
