@@ -86,7 +86,7 @@ class DisplayCourses extends StatelessWidget {
                         Navigator.pushNamed(
                           context,
                           CourseStudentScreen.route,
-                          arguments: course.courseName,
+                          arguments: course,
                         );
                       },
                       child: Card(

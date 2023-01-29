@@ -3,6 +3,7 @@ import 'package:batch_student_objbox_api/model/course.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:objectbox/objectbox.dart';
 
+// flutter pub run build_runner build --delete-conflicting-outputs
 part 'student.g.dart';
 
 @Entity()
@@ -21,18 +22,24 @@ class Student {
   String? username;
   String? password;
 
+  @JsonKey(name: 'batch')
+  Batch? batches;
+  @JsonKey(name: 'course')
+  List<Course>? courses;
+
   final batch = ToOne<Batch>();
   final course = ToMany<Course>();
 
-  Student({
-    this.stdId = 0,
-    this.studentId,
-    this.fname,
-    this.lname,
-    this.image,
-    this.username,
-    this.password,
-  });
+  Student(
+      {this.stdId = 0,
+      this.studentId,
+      this.fname,
+      this.lname,
+      this.image,
+      this.username,
+      this.password,
+      this.batches,
+      this.courses});
 
   factory Student.fromJson(Map<String, dynamic> json) =>
       _$StudentFromJson(json);

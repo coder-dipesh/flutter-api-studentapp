@@ -19,7 +19,7 @@ class CourseRemoteDataSource {
         return [];
       }
     } catch (e) {
-      throw Exception(e.toString());
+      throw Exception('Failed to load course');
     }
   }
 }

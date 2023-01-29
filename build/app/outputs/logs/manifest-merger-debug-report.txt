@@ -24,6 +24,7 @@ MERGED from [:image_picker_android] D:\MobileApplicationDevelopment\flutter-with
 MERGED from [:flutter_plugin_android_lifecycle] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:objectbox_flutter_libs] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\objectbox_flutter_libs\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:path_provider_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:connectivity_plus] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:webview_flutter_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\webview_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\dipes\.gradle\caches\transforms-3\246793f755122fe14a5802655438cb75\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\dipes\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
@@ -86,6 +87,8 @@ MERGED from [:objectbox_flutter_libs] D:\MobileApplicationDevelopment\flutter-wi
 MERGED from [:objectbox_flutter_libs] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\objectbox_flutter_libs\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:connectivity_plus] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:connectivity_plus] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:webview_flutter_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\webview_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:webview_flutter_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\webview_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\dipes\.gradle\caches\transforms-3\246793f755122fe14a5802655438cb75\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
@@ -152,6 +155,10 @@ ADDED from [:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-
 		ADDED from [:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
 	android:name
 		ADDED from [:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:connectivity_plus] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from [:connectivity_plus] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-76
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\dipes\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
 	android:required

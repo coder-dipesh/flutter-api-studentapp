@@ -1,5 +1,8 @@
+import 'package:batch_student_objbox_api/app/constants.dart';
+import 'package:batch_student_objbox_api/model/course.dart';
+import 'package:batch_student_objbox_api/model/student.dart';
+import 'package:batch_student_objbox_api/repository/student_repo.dart';
 import 'package:flutter/material.dart';
-import 'package:batch_student_objbox_api/repository/course_repository.dart';
 
 class CourseStudentScreen extends StatefulWidget {
   const CourseStudentScreen({super.key});
@@ -10,11 +13,11 @@ class CourseStudentScreen extends StatefulWidget {
 }
 
 class _CourseStudentScreenState extends State<CourseStudentScreen> {
-  String courseName = '';
+  late Course course;
 
   @override
   void didChangeDependencies() {
-    courseName = ModalRoute.of(context)!.settings.arguments as String;
+    course = ModalRoute.of(context)!.settings.arguments as Course;
     super.didChangeDependencies();
   }
 
@@ -22,37 +25,17 @@ class _CourseStudentScreenState extends State<CourseStudentScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Students in $courseName'),
+        title: Text('Students in  ${course.courseName}'),
       ),
       body: FutureBuilder(
-        future: CourseRepositoryImpl().getStudentsInEachCourse(courseName),
+        future: StudentRepositoryImpl().getStudentsByCourse(course.courseId!),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            final lstStudents = snapshot.data!;
+            final students = snapshot.data as List<Student>;
             return ListView.builder(
-              itemCount: snapshot.data!.length,
+              itemCount: students.length,
               itemBuilder: (context, index) {
-                return ListTile(
-                  title: Text(lstStudents[index].fname!),
-                  subtitle: Text(
-                      lstStudents[index].batch.target!.batchName.toString()),
-                  trailing: Wrap(
-                    children: [
-                      IconButton(
-                        onPressed: () {},
-                        icon: const Icon(Icons.edit),
-                      ),
-                      IconButton(
-                        onPressed: () {
-                          setState(() {
-                            lstStudents.removeAt(index);
-                          });
-                        },
-                        icon: const Icon(Icons.delete),
-                      ),
-                    ],
-                  ),
-                );
+                return DisplayStudentWidget(students[index]);
               },
             );
           } else {
@@ -62,6 +45,63 @@ class _CourseStudentScreenState extends State<CourseStudentScreen> {
           }
         },
       ),
+    );
+  }
+}
+
+class DisplayStudentWidget extends StatelessWidget {
+  final Student student;
+
+  const DisplayStudentWidget(this.student, {super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: [
+        Card(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(15),
+          ),
+          elevation: 4,
+          margin: const EdgeInsets.all(10),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Image.network(
+              Constant.userImageURL + student.image!,
+            ),
+          ),
+        ),
+        Positioned(
+          bottom: 0,
+          left: 0,
+          right: 0,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              color: Colors.grey.withOpacity(0.5),
+              child: ListTile(
+                title: Text(
+                  '${student.fname} ${student.lname}',
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
+                ),
+                subtitle: Text(
+                  student.batches!.batchName!,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+        const SizedBox(
+          height: 10,
+        ),
+      ],
     );
   }
 }

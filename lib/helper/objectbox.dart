@@ -117,4 +117,30 @@ class ObjectBoxInstance {
 
     return getCourseByCourseName(courseName)!.student;
   }
+
+// Add Course to object box
+  addAllCourse(List<Course> lstCourse) {
+    for (var item in lstCourse) {
+      if (_course
+              .query(Course_.courseId.equals(item.courseId!))
+              .build()
+              .findFirst() ==
+          null) {
+        _course.put(item);
+      }
+    }
+  }
+
+// Add Batch to object box
+  addAllBatch(List<Batch> lstBatch) {
+    for (var item in lstBatch) {
+      if (_batch
+              .query(Batch_.batchId.equals(item.batchId!))
+              .build()
+              .findFirst() ==
+          null) {
+        _batch.put(item);
+      }
+    }
+  }
 }

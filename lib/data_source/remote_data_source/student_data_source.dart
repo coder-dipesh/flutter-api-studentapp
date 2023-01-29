@@ -1,5 +1,7 @@
 import 'dart:io';
 import 'package:batch_student_objbox_api/app/constants.dart';
+import 'package:batch_student_objbox_api/data_source/remote_data_source/response/login_response.dart';
+import 'package:batch_student_objbox_api/data_source/remote_data_source/response/student_response.dart';
 import 'package:batch_student_objbox_api/helper/http_service.dart';
 import 'package:batch_student_objbox_api/model/student.dart';
 import 'package:dio/dio.dart';
@@ -9,6 +11,7 @@ import 'package:http_parser/http_parser.dart';
 class StudentRemoteDataSource {
   final Dio _httpServices = HttpServices().getDioInstance();
 
+// ADD STUDENT
   Future<int> addStudent(File? file, Student student) async {
     try {
       MultipartFile? image;
@@ -41,4 +44,50 @@ class StudentRemoteDataSource {
       return 0;
     }
   }
+
+// GET STUDENT
+  Future<bool> loginStudent(String username, String password) async {
+    try {
+      Response response = await _httpServices.post(Constant.studentLoginURL,
+          data: {"username": username, "password": password});
+
+      if (response.statusCode == 200) {
+        LoginResponse loginResponse = LoginResponse.fromJson(response.data);
+        Constant.token = "Bearer ${loginResponse.token!}";
+        return true;
+      } else {
+        return false;
+      }
+    } catch (e) {
+      return false;
+    }
+  }
+
+// GET STUDENT BY COURSE
+  Future<List<Student>?> getStudentByCourse(String courseId) async {
+    try {
+      Response response =
+          await _httpServices.get(Constant.searchStudentByCourseURL,
+              queryParameters: {
+                'courseId': courseId,
+              },
+              options: Options(
+                headers: {
+                  "Authorization": Constant.token,
+                },
+              ));
+      List<Student> lstStudents = [];
+      if (response.statusCode == 201) {
+        StudentResponse stdResponse = StudentResponse.fromJson(response.data);
+        lstStudents = stdResponse.data!;
+        return lstStudents;
+      } else {
+        return [];
+      }
+    } catch (e) {
+      throw Exception(e.toString());
+    }
+  }
+
+// END
 }

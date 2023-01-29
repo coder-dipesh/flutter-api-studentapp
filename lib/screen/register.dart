@@ -43,7 +43,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   final _fnameController = TextEditingController(text: 'Kiran');
   final _lnameController = TextEditingController(text: 'Rana');
   final _usernameController = TextEditingController(text: 'kiran');
-  final _passwordController = TextEditingController(text: 'kiran123');
+  final _passwordController = TextEditingController(text: '12345678');
 
   _saveStudent() async {
     Student student = Student(

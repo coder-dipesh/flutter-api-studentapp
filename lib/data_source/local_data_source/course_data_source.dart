@@ -37,4 +37,13 @@ class CourseDataSource {
       return [];
     }
   }
+
+  // Add all course from remote to local
+  Future addAllCourse(List<Course> lstCourse) async {
+    try {
+      return objectBoxInstance.addAllCourse(lstCourse);
+    } catch (e) {
+      return false;
+    }
+  }
 }

@@ -19,7 +19,7 @@ class _AboutScreenState extends State<AboutScreen> {
       body: SafeArea(
         child: Stack(children: [
           WebView(
-            initialUrl: 'https://softwarica.edu.np/',
+            initialUrl: 'https://dipeshsiwakoti.com.np/',
             javascriptMode: JavascriptMode.unrestricted,
             onProgress: (int progress) {
               if (progress == 100) {

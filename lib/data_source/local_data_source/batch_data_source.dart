@@ -33,4 +33,14 @@ class BatchDataSource {
       return Future.value([]);
     }
   }
+
+  // Add all batch from remote to local
+
+  Future addAllBatch(List<Batch> lstBatch) async {
+    try {
+      return objectBoxInstance.addAllBatch(lstBatch);
+    } catch (e) {
+      return false;
+    }
+  }
 }
