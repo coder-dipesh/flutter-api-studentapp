@@ -1,4 +1,4 @@
-import 'package:batch_student_objbox_api/repository/batch_repo.dart';
+import 'package:batch_student_objbox_api/repository/batch_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:batch_student_objbox_api/repository/course_repository.dart';
 import 'package:batch_student_objbox_api/screen/batch_student.dart';

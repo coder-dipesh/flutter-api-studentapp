@@ -22,7 +22,7 @@ class StudentDataSource {
     try {
       return Future.value(objectBoxInstance.getAllStudent());
     } catch (e) {
-      throw Exception('Error in getting all student');
+      throw Exception('Error in getting all student');              
     }
   }
 

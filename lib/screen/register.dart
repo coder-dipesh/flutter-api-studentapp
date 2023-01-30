@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:batch_student_objbox_api/app/snackbar.dart';
 import 'package:batch_student_objbox_api/app/user_permission.dart';
-import 'package:batch_student_objbox_api/repository/batch_repo.dart';
+import 'package:batch_student_objbox_api/repository/batch_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:batch_student_objbox_api/model/course.dart';
 import 'package:batch_student_objbox_api/model/student.dart';
