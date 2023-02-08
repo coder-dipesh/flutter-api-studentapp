@@ -4,6 +4,57 @@
             "outputFile": "D:\\MobileApplicationDevelopment\\flutter-with-api\\batch_student_objbox_api_starter\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ur\\values-ur.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\dipes\\.gradle\\caches\\transforms-3\\5cd960781a6a1948b7b0e7aa56175b49\\transformed\\appcompat-1.1.0\\res\\values-ur\\values-ur.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,219,325,434,520,624,744,821,897,989,1082,1177,1271,1373,1467,1563,1657,1749,1841,1925,2033,2139,2241,2352,2453,2569,2734,2832",
+                        "endColumns": "113,105,108,85,103,119,76,75,91,92,94,93,101,93,95,93,91,91,83,107,105,101,110,100,115,164,97,84",
+                        "endOffsets": "214,320,429,515,619,739,816,892,984,1077,1172,1266,1368,1462,1558,1652,1744,1836,1920,2028,2134,2236,2347,2448,2564,2729,2827,2912"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,55",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,219,325,434,520,624,744,821,897,989,1082,1177,1271,1373,1467,1563,1657,1749,1841,1925,2033,2139,2241,2352,2453,2569,2734,5894",
+                        "endColumns": "113,105,108,85,103,119,76,75,91,92,94,93,101,93,95,93,91,91,83,107,105,101,110,100,115,164,97,84",
+                        "endOffsets": "214,320,429,515,619,739,816,892,984,1077,1172,1266,1368,1462,1558,1652,1744,1836,1920,2028,2134,2236,2347,2448,2564,2729,2827,5974"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dipes\\.gradle\\caches\\transforms-3\\3ff720be07735976176520d1c05fb799\\transformed\\jetified-play-services-base-18.0.1\\res\\values-ur\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,297,457,579,686,822,945,1053,1153,1301,1407,1575,1699,1841,2006,2065,2128",
+                        "endColumns": "103,159,121,106,135,122,107,99,147,105,167,123,141,164,58,62,83",
+                        "endOffsets": "296,456,578,685,821,944,1052,1152,1300,1406,1574,1698,1840,2005,2064,2127,2211"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2832,2940,3104,3230,3341,3481,3608,3720,3976,4128,4238,4410,4538,4684,4853,4916,4983",
+                        "endColumns": "107,163,125,110,139,126,111,103,151,109,171,127,145,168,62,66,87",
+                        "endOffsets": "2935,3099,3225,3336,3476,3603,3715,3819,4123,4233,4405,4533,4679,4848,4911,4978,5066"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dipes\\.gradle\\caches\\transforms-3\\f86ec071bf450e39af13f09fbaee44da\\transformed\\wear-1.2.0\\res\\values-ur\\values-ur.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,162,289,400,501,610",
+                        "endColumns": "106,126,110,100,108,111",
+                        "endOffsets": "157,284,395,496,605,717"
+                    },
+                    "to": {
+                        "startLines": "47,48,49,50,60,61",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "5071,5178,5305,5416,6407,6516",
+                        "endColumns": "106,126,110,100,108,111",
+                        "endOffsets": "5173,5300,5411,5512,6511,6623"
+                    }
+                },
+                {
                     "source": "C:\\Users\\dipes\\.gradle\\caches\\transforms-3\\d363e3b5616f580c766e3e2b3c05f27d\\transformed\\core-1.8.0\\res\\values-ur\\values-ur.xml",
                     "from": {
                         "startLines": "2",
@@ -11,6 +62,47 @@
                         "startOffsets": "55",
                         "endColumns": "100",
                         "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "56",
+                        "startColumns": "4",
+                        "startOffsets": "5979",
+                        "endColumns": "100",
+                        "endOffsets": "6075"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dipes\\.gradle\\caches\\transforms-3\\510620b1fef18b8ecb05858888da44b9\\transformed\\preference-1.1.1\\res\\values-ur\\values-ur.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "105,178,266,343,482,651,733",
+                        "endColumns": "72,87,76,138,168,81,75",
+                        "endOffsets": "173,261,338,477,646,728,804"
+                    },
+                    "to": {
+                        "startLines": "51,52,53,54,57,58,59",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "5517,5590,5678,5755,6080,6249,6331",
+                        "endColumns": "72,87,76,138,168,81,75",
+                        "endOffsets": "5585,5673,5750,5889,6244,6326,6402"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dipes\\.gradle\\caches\\transforms-3\\601d4158b382ad9f634d3bbb23a34c83\\transformed\\jetified-play-services-basement-18.0.0\\res\\values-ur\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "147",
+                        "endOffsets": "342"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "3824",
+                        "endColumns": "151",
+                        "endOffsets": "3971"
                     }
                 }
             ]

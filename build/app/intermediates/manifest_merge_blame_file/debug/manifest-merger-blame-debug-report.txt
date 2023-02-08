@@ -5,7 +5,7 @@
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="20"
+8        android:minSdkVersion="23"
 9        android:targetSdkVersion="33" />
 10    <!--
 11         The INTERNET permission is required for development. Specifically,
@@ -15,83 +15,145 @@
 15    <uses-permission android:name="android.permission.INTERNET" />
 15-->D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\android\app\src\main\AndroidManifest.xml:3:5-67
 15-->D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\android\app\src\main\AndroidManifest.xml:3:22-64
-16    <uses-permission android:name="android.permission.CAMERA" />
+16    <uses-permission android:name="android.permission.CAMERA" /> <!-- Flags the app as a Wear app -->
 16-->D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\android\app\src\main\AndroidManifest.xml:4:5-65
 16-->D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\android\app\src\main\AndroidManifest.xml:4:22-62
-17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->[:connectivity_plus] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
-17-->[:connectivity_plus] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-76
-18
-19    <application
-20        android:name="android.app.Application"
-21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.8.0] C:\Users\dipes\.gradle\caches\transforms-3\d363e3b5616f580c766e3e2b3c05f27d\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
-22        android:debuggable="true"
-23        android:icon="@mipmap/ic_launcher"
-24        android:label="batch_student_objbox_api" >
-25        <activity
-26            android:name="com.batch_student_api.batch_student_objbox_api.MainActivity"
-27            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-28            android:exported="true"
-29            android:hardwareAccelerated="true"
-30            android:launchMode="singleTop"
-31            android:theme="@style/LaunchTheme"
-32            android:windowSoftInputMode="adjustResize" >
-33
-34            <!--
-35                 Specifies an Android theme to apply to this Activity as soon as
-36                 the Android process has started. This theme is visible to the user
-37                 while the Flutter UI initializes. After that, this theme continues
-38                 to determine the Window background behind the Flutter UI.
-39            -->
-40            <meta-data
-41                android:name="io.flutter.embedding.android.NormalTheme"
-42                android:resource="@style/NormalTheme" />
-43
-44            <intent-filter>
-45                <action android:name="android.intent.action.MAIN" />
-46
-47                <category android:name="android.intent.category.LAUNCHER" />
-48            </intent-filter>
-49        </activity>
-50        <!--
-51             Don't delete the meta-data below.
-52             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-53        -->
-54        <meta-data
-55            android:name="flutterEmbedding"
-56            android:value="2" />
-57
-58        <provider
-58-->[:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
-59            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-59-->[:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
-60            android:authorities="com.batch_student_api.batch_student_objbox_api.flutter.image_provider"
-60-->[:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
-61            android:exported="false"
-61-->[:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
-62            android:grantUriPermissions="true" >
-62-->[:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
-63            <meta-data
-63-->[:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
-64                android:name="android.support.FILE_PROVIDER_PATHS"
-64-->[:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
-65                android:resource="@xml/flutter_image_picker_file_paths" />
-65-->[:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
-66        </provider>
-67
-68        <uses-library
-68-->[androidx.window:window:1.0.0-beta04] C:\Users\dipes\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
-69            android:name="androidx.window.extensions"
-69-->[androidx.window:window:1.0.0-beta04] C:\Users\dipes\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
-70            android:required="false" />
-70-->[androidx.window:window:1.0.0-beta04] C:\Users\dipes\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
-71        <uses-library
-71-->[androidx.window:window:1.0.0-beta04] C:\Users\dipes\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
-72            android:name="androidx.window.sidecar"
-72-->[androidx.window:window:1.0.0-beta04] C:\Users\dipes\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
-73            android:required="false" />
-73-->[androidx.window:window:1.0.0-beta04] C:\Users\dipes\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
-74    </application>
-75
-76</manifest>
+17    <uses-feature android:name="android.hardware.type.watch" /> <!-- Required for ambient mode support -->
+17-->[:wear] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\wear\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-64
+17-->[:wear] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\wear\intermediates\merged_manifest\debug\AndroidManifest.xml:10:19-61
+18    <uses-permission android:name="android.permission.WAKE_LOCK" />
+18-->[:wear] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\wear\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-68
+18-->[:wear] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\wear\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-65
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->[:connectivity_plus] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+19-->[:connectivity_plus] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-76
+20
+21    <uses-feature
+21-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\dipes\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+22        android:glEsVersion="0x00020000"
+22-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\dipes\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+23        android:required="true" />
+23-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\dipes\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+24
+25    <queries>
+25-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\dipes\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+26
+27        <!-- Needs to be explicitly declared on Android R+ -->
+28        <package android:name="com.google.android.apps.maps" />
+28-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\dipes\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+28-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\dipes\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+29    </queries>
+30
+31    <application
+32        android:name="android.app.Application"
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.8.0] C:\Users\dipes\.gradle\caches\transforms-3\d363e3b5616f580c766e3e2b3c05f27d\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+34        android:debuggable="true"
+35        android:extractNativeLibs="false"
+36        android:icon="@mipmap/ic_launcher"
+37        android:label="batch_student_objbox_api" >
+38        <meta-data
+39            android:name="com.google.android.geo.API_KEY"
+40            android:value="AIzaSyBgW7FBJyQ53ecxJN6V3n2viiSGXeve_40" />
+41
+42        <activity
+43            android:name="com.batch_student_api.batch_student_objbox_api.MainActivity"
+44            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+45            android:exported="true"
+46            android:hardwareAccelerated="true"
+47            android:launchMode="singleTop"
+48            android:theme="@style/LaunchTheme"
+49            android:windowSoftInputMode="adjustResize" >
+50
+51            <!--
+52                 Specifies an Android theme to apply to this Activity as soon as
+53                 the Android process has started. This theme is visible to the user
+54                 while the Flutter UI initializes. After that, this theme continues
+55                 to determine the Window background behind the Flutter UI.
+56            -->
+57            <meta-data
+58                android:name="io.flutter.embedding.android.NormalTheme"
+59                android:resource="@style/NormalTheme" />
+60
+61            <intent-filter>
+62                <action android:name="android.intent.action.MAIN" />
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+65            </intent-filter>
+66        </activity>
+67        <!--
+68             Don't delete the meta-data below.
+69             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+70        -->
+71        <meta-data
+72            android:name="flutterEmbedding"
+73            android:value="2" />
+74
+75        <provider
+75-->[:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+76            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+76-->[:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
+77            android:authorities="com.batch_student_api.batch_student_objbox_api.flutter.image_provider"
+77-->[:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+78            android:exported="false"
+78-->[:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+79            android:grantUriPermissions="true" >
+79-->[:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+80            <meta-data
+80-->[:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+81                android:name="android.support.FILE_PROVIDER_PATHS"
+81-->[:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+82                android:resource="@xml/flutter_image_picker_file_paths" />
+82-->[:image_picker_android] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+83        </provider>
+84
+85        <meta-data
+85-->[:wear] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\wear\intermediates\merged_manifest\debug\AndroidManifest.xml:17:9-19:36
+86            android:name="com.google.android.wearable.standalone"
+86-->[:wear] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\wear\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-66
+87            android:value="true" />
+87-->[:wear] D:\MobileApplicationDevelopment\flutter-with-api\batch_student_objbox_api_starter\build\wear\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-33
+88
+89        <uses-library
+89-->[androidx.window:window:1.0.0-beta04] C:\Users\dipes\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+90            android:name="androidx.window.extensions"
+90-->[androidx.window:window:1.0.0-beta04] C:\Users\dipes\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+91            android:required="false" />
+91-->[androidx.window:window:1.0.0-beta04] C:\Users\dipes\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+92        <uses-library
+92-->[androidx.window:window:1.0.0-beta04] C:\Users\dipes\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+93            android:name="androidx.window.sidecar"
+93-->[androidx.window:window:1.0.0-beta04] C:\Users\dipes\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+94            android:required="false" />
+94-->[androidx.window:window:1.0.0-beta04] C:\Users\dipes\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+95        <uses-library
+95-->[androidx.wear:wear:1.2.0] C:\Users\dipes\.gradle\caches\transforms-3\f86ec071bf450e39af13f09fbaee44da\transformed\wear-1.2.0\AndroidManifest.xml:25:9-27:40
+96            android:name="com.google.android.wearable"
+96-->[androidx.wear:wear:1.2.0] C:\Users\dipes\.gradle\caches\transforms-3\f86ec071bf450e39af13f09fbaee44da\transformed\wear-1.2.0\AndroidManifest.xml:26:13-55
+97            android:required="false" /> <!-- Needs to be explicitly declared on P+ -->
+97-->[androidx.wear:wear:1.2.0] C:\Users\dipes\.gradle\caches\transforms-3\f86ec071bf450e39af13f09fbaee44da\transformed\wear-1.2.0\AndroidManifest.xml:27:13-37
+98        <uses-library
+98-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\dipes\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+99            android:name="org.apache.http.legacy"
+99-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\dipes\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+100            android:required="false" />
+100-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\dipes\.gradle\caches\transforms-3\e201e9ad108cf5dd9bf454f2a581d29d\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+101
+102        <activity
+102-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\dipes\.gradle\caches\transforms-3\3ff720be07735976176520d1c05fb799\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+103            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+103-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\dipes\.gradle\caches\transforms-3\3ff720be07735976176520d1c05fb799\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+104            android:exported="false"
+104-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\dipes\.gradle\caches\transforms-3\3ff720be07735976176520d1c05fb799\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+105            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+105-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\dipes\.gradle\caches\transforms-3\3ff720be07735976176520d1c05fb799\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+106
+107        <meta-data
+107-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\dipes\.gradle\caches\transforms-3\601d4158b382ad9f634d3bbb23a34c83\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+108            android:name="com.google.android.gms.version"
+108-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\dipes\.gradle\caches\transforms-3\601d4158b382ad9f634d3bbb23a34c83\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+109            android:value="@integer/google_play_services_version" />
+109-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\dipes\.gradle\caches\transforms-3\601d4158b382ad9f634d3bbb23a34c83\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+110    </application>
+111
+112</manifest>

@@ -6,6 +6,7 @@
         android:label="batch_student_objbox_api"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBgW7FBJyQ53ecxJN6V3n2viiSGXeve_40"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
